@@ -11,5 +11,6 @@
     <string name="Password_label">Password:</string>
     <string name="Reconfirm_label">Confirmation:</string>
     <string name="Reconfirm_hint_text">Please confirm your password</string>
-
+    <string name="test">test</string>
+    <string name="test1">test1</string>
 </resources>
