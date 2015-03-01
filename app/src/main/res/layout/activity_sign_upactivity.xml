@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SignUpactivity">
+
+    <LinearLayout
+        android:id="@+id/Field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Textview1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/Username_label" />
+
+
+        <EditText
+            android:id="@+id/Edittext1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Textview1"
+            android:layout_weight="75"
+            android:hint="@string/Username_hint_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Field2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Field">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/Password_label" />
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Textview1"
+            android:layout_weight="75"
+            android:hint="@string/Password_hint_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Field3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Field2">>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/Reconfirm_label" />
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Textview1"
+            android:layout_weight="75"
+            android:hint="@string/Reconfirm_hint_text" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Field3"
+        android:layout_below="@id/Field3"
+        android:text="@string/Submit_button_Label" />
+</RelativeLayout>
